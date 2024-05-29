@@ -1,0 +1,202 @@
+.navbar{
+    background-color: rgb(4, 68, 141);
+}
+
+
+/* Style for the header logo container */
+.header-logo-container {
+    position: relative; /* Set relative positioning for the container */
+}
+
+
+
+.logo-img-2 {
+    position: absolute; /* Set absolute positioning for the logo */
+    top: 50%; /* Position the logo at the vertical center */
+    right: 91.3%; /* Position the logo at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the logo perfectly */
+    max-width: 85px; /* Set the maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Place the logo above the header image */
+}
+
+/* Style for the header image */
+.header-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* This maintains the image's aspect ratio */
+    max-height: 300px; /* Set a maximum height for the image */
+}
+
+.input-group {
+    position: relative;
+}
+
+/* style.css */
+
+/* Add styles to specifically target the "x" button */
+#clearInput {
+    border: none;  /* Remove the default border */
+    background: none;  /* Remove the default background */
+    font-size: 1em;  /* Set the font size for the "x" button */
+    color: #fff;  /* Set the color of the "x" button */
+    padding: 0 5px 0 0;  /* Remove any padding */
+    cursor: pointer;  /* Change the cursor to indicate interactivity */
+    outline: none;  /* Remove the default focus outline */
+    transition: color 0.3s ease-in-out;  /* Add a smooth transition for color change */
+}
+
+/* Remove the outline on button focus */
+#clearInput:focus {
+    outline: none !important;
+}
+
+#clearInput:hover {
+    color: red;  /* Change the color on hover for better visibility */
+    border: none;
+}
+
+
+
+/* Change the color of the "Category" text */
+.navbar-nav li.nav-item:hover a.nav-link {
+    color:yellow; /* Replace 'your-desired-color' with your chosen color value */
+}
+
+
+
+
+.nav-item, .nav ul li:hover{
+    
+    border-radius: 3px;
+}
+
+
+
+/* Style for the search box container */
+.input-group {
+    position: relative;
+    width: 75%;
+    max-width: 400px; /* Set a maximum width for the search box */
+    
+}
+
+/* Style for the search input field */
+.form-control {
+    border: 2px solid #fcfcfc; /* Add a border with a specific color */
+    border-radius: 75px; /* Add rounded corners */
+    background-color: white; /* Make the background transparent */
+    color:black; /* Set the text color */
+    font-size: 13px; /* Set the font size */
+    padding: 10px 20px; /* Add padding to the input field */
+    
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add smooth transitions */
+}
+
+/* Style for the search input field on focus (when clicked) */
+.form-control:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #ff0000; /* Change the border color on focus */
+    color: black; /* Change the text color on focus */
+}
+
+/* Style for the search button */
+.btn-outline-warning {
+    border: 2px solid  #fcfcfc; /* Add a border with a specific color */
+    border-radius: 25px; /* Add rounded corners */
+    background-color: white; /* Make the background transparent */
+    color: black; /* Set the button text color */
+    font-size: 13px; /* Set the font size */
+    padding: 10px 20px; /* Add padding to the button */
+    margin-left: 5px; /* Adjust the margin to align the button with the input */
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Add smooth transitions */
+}
+
+/* Style for the search button on hover */
+.btn-outline-warning:hover {
+    background-color: rgb(16, 8, 255); /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+    border-color: #fff;
+}
+
+
+/* Style for the sub-menu */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color:rgb(4, 68, 141); /* Background color of the sub-menu */
+    padding: 10px; /* Add padding to the sub-menu items */
+    z-index: 2; /* Ensure the sub-menu appears above other content */
+    top: 80%; /* Position the sub-menu below the "Home" link */
+    left: 15px; /* Align the sub-menu with the "Home" link */
+    
+}
+
+/* Style for sub-menu items */
+.sub-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-menu ul li {
+    margin: 5px 0;
+}
+
+/* Show the sub-menu when hovering over the "Home" link */
+.nav-item:hover .sub-menu {
+    display: block;
+}
+
+
+
+/* Change link color on hover */
+.sub-menu ul li a:hover {
+    color: #ff0000; /* Change the link color on hover */
+}
+
+/* Adjust the position of contact info in the footer */
+.contact-info {
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute; /* Position absolutely within the parent container */
+    bottom: 0; /* Align to the bottom of the parent container */
+    left: 20px; /* Add some right margin for spacing */
+}
+
+
+
+
+/* News Ticker Container */
+.news-ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #823434;
+    position: relative;
+  }
+  
+  /* News Headlines */
+  .news-headline {
+    display: inline-block;
+    padding-right: 20px; /* Adjust spacing between headlines */
+    font-size: 24px; /* Font size for headlines */
+    padding: 3px;
+    color: #fff;
+  }
+  
+  /* Animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Apply the animation to the news-ticker-container */
+  .news-ticker-container .news-headline {
+    animation: marquee 30s linear infinite; /* Equal duration for all headlines */  
+  }
+  
+  
+  
+  
